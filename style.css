@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+/* =========================
+   CURRENT IMAGE CONTAINER
+========================= */
+
+#current-image-container {
+    background-color: black;
+    color: white;
+
+    width: 100%;
+    padding: 30px;
+
+    min-height: 500px;
+}
+
+#current-image-container h1 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#current-image-container img {
+    width: 100%;
+    max-height: 500px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-bottom: 25px;
+}
+
+#current-image-container h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+#current-image-container p {
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SEARCH SECTION
+========================= */
+
+.search-section {
+    padding: 25px 10px;
+}
+
+.search-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+#search-form label {
+    font-size: 16px;
+}
+
+#search-input {
+    padding: 8px;
+
+    font-size: 15px;
+
+    border: 1px solid #999;
+
+    border-radius: 3px;
+}
+
+#search-form button {
+    padding: 8px 15px;
+
+    font-size: 15px;
+
+    background-color: #eee;
+
+    border: 1px solid #999;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #ddd;
+}
+
+
+/* =========================
+   SEARCH HISTORY
+========================= */
+
+.history-section {
+    padding: 0 10px 30px;
+}
+
+.history-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+#search-history {
+    padding-left: 30px;
+}
+
+#search-history li {
+    color: blue;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+
+    margin-bottom: 10px;
+
+    font-size: 17px;
+}
+
+#search-history li:hover {
+    color: darkblue;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+    color: red;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    #current-image-container {
+        padding: 20px;
+    }
+
+    #current-image-container h1 {
+        font-size: 28px;
+    }
+
+    #search-form {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    #search-input,
+    #search-form button {
+        width: 100%;
+    }
+
+}
